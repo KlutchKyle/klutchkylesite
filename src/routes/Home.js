@@ -3,18 +3,15 @@ import Typewriter from "typewriter-effect";
 import logo from "../assets/img/logoclear.png";
 import "../styles/Home.css";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  useSearchParams,
-  createSearchParams,
-  useNavigate,
-  useLocation,
-  Link,
-} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
   const [transitioning, setTransitioning] = useState(false);
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
+  useEffect(() => {
+    document.title = "KlutchKyle's Portfolio";
+  }, []);
   const list = {
     visible: {
       opacity: 1,
@@ -51,19 +48,21 @@ export default function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}
       >
-        {transitioning ?
-        (<motion.div
-          className="transitionwrapper"
-          initial={{ top: windowSize.current[1] }}
-          animate={{ top: windowSize.current[1] }}
-          exit={{ top: 0 - windowSize.current[1] }}
-          transition={{ duration: 1 }}
-        >
-          {" "}
-        </motion.div>) : null }
+        {transitioning ? (
+          <motion.div
+            className="transitionwrapper"
+            initial={{ top: windowSize.current[1] }}
+            animate={{ top: windowSize.current[1] }}
+            exit={{ top: 0 - windowSize.current[1] }}
+            transition={{ duration: 1 }}
+          >
+            {" "}
+          </motion.div>
+        ) : null}
         <div className="descriptioncontainer">
-          
           <div className="descriptionheader">
+            <motion.img
+className="logo-image" src={logo}></motion.img>
             <Typewriter
               options={{
                 cursor: "_",
@@ -168,11 +167,14 @@ export default function Home() {
                 transition: { duration: 0.1 },
               }}
               variants={item}
-              onClick={() => {
-                navigate({
-                  replace: false,
-                  pathname: "/yt-downloader",
-                });
+              onMouseDown={() => {
+                if (
+                  window.confirm(
+                    "Would you like to be redirected to my old website that displays my old projects for jailbroken devices?\n\n***Explaination***\nLockHTML widgets are web based widgets I did for jailbroken iPhones. It isn't included in this updated website because I'm no longer supporting the widgets, nor do I have any intention in updating them."
+                  )
+                ) {
+                  window.open("https://oldklutchkyle.netlify.app", "_blank");
+                }
               }}
             >
               LockHTML Widgets

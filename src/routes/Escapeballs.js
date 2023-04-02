@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "../styles/Escapeballs.css";
 import screenshot1 from "../assets/img/screenshot1.jpeg";
 import screenshot2 from "../assets/img/screenshot2.jpeg";
 import screenshot3 from "../assets/img/screenshot3.jpeg";
 import appstoreicon from "../assets/img/appstoreicon.svg";
 import Starfield from "../components/Starfield";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay} from "swiper";
 import "swiper/css/pagination";
 
 // Import Swiper styles
 import "swiper/css";
 
 export default function Escapeballs() {
+  useEffect(()=>{document.title = "KlutchKyle's Portfolio | Escape Balls"},[])
+
   return (
     <motion.div
       className="escapeballs-container"

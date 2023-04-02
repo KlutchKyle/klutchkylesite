@@ -16,6 +16,9 @@
     .menu-list-inner {
       width: 100%;
     }
+    .menu-x-container {
+      margin-right: 25px;
+    }
   }
 
   /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -70,19 +73,29 @@
     cursor: pointer;
   }
 
-  .menuicon {
+  .menu-icon {
     size: 48;
     margin: 15px;
     transition: all 0.1s linear;
   }
 
-  .menuicon:hover {
-
-  }
-
-  .menuicon:active {
+  .menu-icon:active {
     opacity: 0;
+
   }
+
+  .menu-icon-x {
+    transition: all 0.1s linear;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
 
   .menu-list-container {
     display: flex;
@@ -128,7 +141,7 @@
     margin-top: 15px;
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     text-align: center;
     align-self: center;
   }

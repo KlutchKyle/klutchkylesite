@@ -11,7 +11,7 @@ import {
   Link,
 } from "react-router-dom";
 
-export default function YTDownloader() {
+export default function Hobbies() {
   const navigate = useNavigate();
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
   console.log(windowSize.current);

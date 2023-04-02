@@ -41,17 +41,18 @@ body {
     font-size: 18px;
   }
   .wrapper {
-    margin-top: 100px;
+    margin-top: 0px;
   }
   .linklist {
     font-size: 25px;
+
   }
   .deviconscontainer i {
     font-size: 50px;
     filter: opacity(0.5)
   }
   .descriptioncontainer {
-    height: 275px;
+    height: 350px;
   }
   .linklistcontainer {
     font-size: 35px;
@@ -128,8 +129,15 @@ body {
   z-index: 200;
 }
 
+.logo-container{
+  height: 50px;
+}
+.logo-image {
+  height: 50px;
+}
+
 .descriptioncontainer {
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -145,6 +153,7 @@ body {
 }
 
 .linklistheader{
+  color: rgb(255, 210, 191);
   padding: 5px;
   border-bottom: 2px solid ;
 }
@@ -157,8 +166,6 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  color: rgb(255, 241, 234);
-
 }
 
 .linklist {
