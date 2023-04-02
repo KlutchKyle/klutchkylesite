@@ -1,0 +1,203 @@
+body {
+  /*background: url(../assets/img/bkgimg/klutchbkg.png) no-repeat center center fixed;*/
+  background-color: black;
+
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+.home-page {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(-29.36deg,
+      rgba(246, 97, 0, 0.1) 0%,
+      rgba(246, 97, 0, 0.75) 49%,
+      rgba(246, 97, 0, 1) 49%,
+      rgb(142, 57, 0) 49%,
+      rgb(91, 36, 0) 49%,
+      rgb(91, 36, 0) 50%,
+      rgb(50, 20, 0) 50%,
+      rgb(50, 20, 0) 51%,
+      rgb(50, 20, 0) 51%,
+      black 51%,
+      black 51%,
+      black 100%);
+  background-size: cover cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+
+}
+
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .descriptionheader {
+    font-size: 18px;
+  }
+  .wrapper {
+    margin-top: 100px;
+  }
+  .linklist {
+    font-size: 25px;
+  }
+  .deviconscontainer i {
+    font-size: 50px;
+    filter: opacity(0.5)
+  }
+  .descriptioncontainer {
+    height: 275px;
+  }
+  .linklistcontainer {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less... */
+@media screen and (max-width: 600px) {
+  .descriptionheader {
+    font-size: 12px;
+  }
+  .wrapper {
+    margin-top: 25px;
+  }
+  .linklist {
+    font-size:  20px;
+  }
+  .deviconscontainer * {
+    font-size: 30px;
+    filter: opacity(0.5)
+  }
+  .descriptioncontainer {
+    height: 325px;
+  }
+  .linklistcontainer {
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-height: 700px) {
+  .deviconscontainer {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .linklistcontainer {
+    visibility: collapse;
+  }
+
+}
+
+.wrapper {
+  height: 75vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.transitionwrapper {
+  position: absolute;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: linear-gradient(0deg,
+      rgb(79, 32, 0) 0%,
+      rgb(246, 98, 0) 49%,
+      rgba(246, 97, 0, 1) 49%,
+      rgb(142, 57, 0) 49%,
+      rgb(91, 36, 0) 49%,
+      rgb(91, 36, 0) 50%,
+      rgb(50, 20, 0) 50%,
+      rgb(50, 20, 0) 51%,
+      rgb(50, 20, 0) 51%,
+      rgba(0, 0, 0, 0) 51%,
+      rgba(0, 0, 0, 0) 51%,
+      rgba(0, 0, 0, 0) 100%);
+  background-size: cover cover;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.descriptioncontainer {
+  margin-top: 100px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: 95%;
+  max-width: 1000px;
+}
+
+.descriptionheader {
+  padding: 20px;
+
+}
+
+.linklistheader{
+  padding: 5px;
+  border-bottom: 2px solid ;
+}
+
+.linklistcontainer {
+  display: flex;
+  margin-left: auto;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(255, 241, 234);
+
+}
+
+.linklist {
+  list-style-type: none;
+  padding-right: 40px;
+  margin-top: 15px;
+  text-align: right;
+  
+}
+
+
+
+.linklist li {
+  color: rgb(255, 210, 191);
+  padding: 10px;
+  border: solid rgb(255, 210, 191);
+  border-width: 0px 3px 0px 0px;
+  transition: border 0.1s linear;
+  position: relative;
+  font-weight: bolder;
+  -webkit-transform-style: preserve-3d;
+  
+}
+
+
+.linklist li:hover{
+
+}
+
+.deviconscontainer {
+  mix-blend-mode: normal;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95vw;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+}

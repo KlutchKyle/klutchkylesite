@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Home from "./routes/Home";
+import Escapeballs from "./routes/Escapeballs";
+import YTDownloader from "./routes/Youtubedownloader";
+import Navbar from './components/Navbar'
+import { motion, AnimatePresence } from "framer-motion";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+    <AnimatePresence initial={false} mode='wait'>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/escape-balls" element={<Escapeballs />} />
+        <Route path="/yt-downloader" element={<YTDownloader />} />
+      </Routes>
+      </AnimatePresence>
     </div>
   );
 }

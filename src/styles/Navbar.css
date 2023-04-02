@@ -1,0 +1,134 @@
+.navbar {
+    /*background-color: rgba(255,255,255,0.1);*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    vertical-align: middle;
+    overflow: hidden;
+
+  }
+
+/* If the screen size is 600px wide or less... */
+  @media screen and (max-width: 600px) {
+    .menu-list-inner {
+      width: 100%;
+    }
+  }
+
+  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .menu-list-inner {
+    width: 300px;
+  }
+}
+  
+  .logoicon {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+  }
+
+  .largenav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    vertical-align: middle;
+  }
+
+  .smallnav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .contact {
+    margin: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    vertical-align:bottom;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    width: 5em;
+    transition: all 0.1s linear;
+  }
+
+  .contact:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  .menuicon {
+    size: 48;
+    margin: 15px;
+    transition: all 0.1s linear;
+  }
+
+  .menuicon:hover {
+
+  }
+
+  .menuicon:active {
+    opacity: 0;
+  }
+
+  .menu-list-container {
+    display: flex;
+    all: unset;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0,0.9);
+    height:100vh;
+    overflow: hidden;
+
+  }
+
+  .menu-list-inner {
+    background-color: rgb(136,49,14);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding: 10px;
+  }
+  
+  .menu-list-inner li {
+    font-size: 20px;
+    padding: 10px;
+    border: white solid 1px;
+    border-width: 0px 0px 0px 3px;
+    margin-left: 0;
+    transition: border 0.1s linear;
+    position: relative;
+    font-weight: bolder;
+    list-style-type: none;
+    margin: 10px;
+
+  }
+  .menu-list-header {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    align-self: center;
+  }
