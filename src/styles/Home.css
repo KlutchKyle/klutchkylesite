@@ -192,7 +192,7 @@ body {
 
 
 .linklist li:hover{
-
+  cursor: pointer;
 }
 
 .deviconscontainer {

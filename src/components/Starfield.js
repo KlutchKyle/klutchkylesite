@@ -11,7 +11,7 @@ export default function StarField({windowSize}) {
 
     let stars = [];
     const numStars = 1000;
-    const speed = 0.25;
+    const speed = 0.75;
     const maxZ = 500;
     const spread = 150;
     const scale = height/height;

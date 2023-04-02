@@ -69,15 +69,23 @@
     transition: all 0.1s linear;
     margin-left: 0;
   }
+  .contact:hover {
+    cursor: pointer;
+  }
 
   .github {
     transition: all 0.1s linear;
     display: flex;
     align-items: center;
   }
+
+  .github:hover {
+    cursor: pointer;
+  }
   .github-icon {
     margin: 0;
   }
+
 
   .instagram {
     margin-left: auto;
@@ -88,6 +96,9 @@
   }
   .instagram-icon {
     margin: 0;
+  }
+  .instagram:hover {
+    cursor: pointer;
   }
 
   .menu-icon {
@@ -153,6 +164,10 @@
     list-style-type: none;
     margin: 10px;
 
+  }
+
+  .menu-list-inner li:hover {
+    cursor: pointer;
   }
   .menu-list-header {
     margin-top: 15px;
