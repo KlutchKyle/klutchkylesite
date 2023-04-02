@@ -95,28 +95,29 @@ export default function Navbar() {
             }}
           >
             <motion.div className="home-container">
-            <motion.div className="menu-x-container">
-              <Icon.X
-                style={
-                  mouseHover == "menu-icon-x"
-                    ? { color: "white", borderColor: "white" }
-                    : {
-                        color: `${dynamicColor}`,
-                        borderColor: `${dynamicColor}`,
-                      }
-                }
-                className="menu-icon-x"
-                onMouseEnter={() => {
-                  setMouseHover("menu-icon-x");
-                }}
-                onMouseLeave={() => {
-                  setMouseHover("none");
-                }}
-                onMouseDown={() => {
-                  setIsOpen(!isOpen);
-                }}
-                size={40}
-              /></motion.div>
+              <motion.div className="menu-x-container">
+                <Icon.X
+                  style={
+                    mouseHover == "menu-icon-x"
+                      ? { color: "white", borderColor: "white" }
+                      : {
+                          color: `${dynamicColor}`,
+                          borderColor: `${dynamicColor}`,
+                        }
+                  }
+                  className="menu-icon-x"
+                  onMouseEnter={() => {
+                    setMouseHover("menu-icon-x");
+                  }}
+                  onMouseLeave={() => {
+                    setMouseHover("none");
+                  }}
+                  onMouseDown={() => {
+                    setIsOpen(!isOpen);
+                  }}
+                  size={40}
+                />
+              </motion.div>
               <motion.li
                 whileHover={{
                   scale: 1.1,
@@ -215,6 +216,40 @@ export default function Navbar() {
             />
           )}
         </motion.div>
+        <div
+          className="github"
+          onMouseEnter={() => {
+            setMouseHover("github");
+          }}
+          onMouseLeave={() => {
+            setMouseHover("none");
+          }}
+          style={
+            mouseHover == "github"
+              ? { color: "white", borderColor: "white" }
+              : { color: `${dynamicColor}`, borderColor: `${dynamicColor}` }
+          }
+          onMouseDown={() => {window.open("https://github.com/KlutchKyle", "_blank");}}
+        >
+          <Icon.GitHub
+            style={
+              mouseHover == "github-icon"
+                ? { color: "white", borderColor: "white" }
+                : { color: `${dynamicColor}`, borderColor: `${dynamicColor}` }
+            }
+            className="github-icon"
+            onMouseEnter={() => {
+              setMouseHover("github-icon");
+            }}
+            onMouseLeave={() => {
+              setMouseHover("none");
+            }}
+            onMouseDown={() => {
+              window.open("https://github.com/KlutchKyle", "_blank");
+            }}
+            size={30} strokeWidth={2}
+          />
+        </div>
         <div
           className="contact"
           onMouseEnter={() => {
