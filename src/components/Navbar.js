@@ -217,6 +217,35 @@ export default function Navbar() {
           )}
         </motion.div>
         <div
+          className="instagram"
+          onMouseEnter={() => {
+            setMouseHover("github");
+          }}
+          onMouseLeave={() => {
+            setMouseHover("none");
+          }}
+          onMouseDown={() => {window.open("https://www.instagram.com/klutchkyledesigns/?hl=en", "_blank");}}
+        >
+          <Icon.Instagram
+            style={
+              mouseHover == "instagram-icon"
+                ? { color: "white", borderColor: "white" }
+                : { color: `${dynamicColor}`, borderColor: `${dynamicColor}` }
+            }
+            className="instagram-icon"
+            onMouseEnter={() => {
+              setMouseHover("instagram-icon");
+            }}
+            onMouseLeave={() => {
+              setMouseHover("none");
+            }}
+            onMouseDown={() => {
+              window.open("https://www.instagram.com/klutchkyledesigns/?hl=en", "_blank");
+            }}
+            size={30} strokeWidth={2}
+          />
+        </div>
+        <div
           className="github"
           onMouseEnter={() => {
             setMouseHover("github");
@@ -224,11 +253,6 @@ export default function Navbar() {
           onMouseLeave={() => {
             setMouseHover("none");
           }}
-          style={
-            mouseHover == "github"
-              ? { color: "white", borderColor: "white" }
-              : { color: `${dynamicColor}`, borderColor: `${dynamicColor}` }
-          }
           onMouseDown={() => {window.open("https://github.com/KlutchKyle", "_blank");}}
         >
           <Icon.GitHub

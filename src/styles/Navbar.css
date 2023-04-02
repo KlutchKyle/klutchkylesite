@@ -58,7 +58,7 @@
 
   .contact {
     margin: 15px;
-    margin-right: 0;
+    margin-right: 15px;
     font-weight: 700;
     font-size: 18px;
     vertical-align:bottom;
@@ -71,13 +71,22 @@
   }
 
   .github {
+    transition: all 0.1s linear;
+    display: flex;
+    align-items: center;
+  }
+  .github-icon {
+    margin: 0;
+  }
+
+  .instagram {
     margin-left: auto;
     justify-self: flex-end;
     transition: all 0.1s linear;
     display: flex;
     align-items: center;
   }
-  .github-icon {
+  .instagram-icon {
     margin: 0;
   }
 
