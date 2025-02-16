@@ -1,0 +1,274 @@
+body {
+  /*background: url(../assets/img/bkgimg/klutchbkg.png) no-repeat center center fixed;*/
+  background-color: black;
+  overflow-x: hidden;
+  color: rgb(255, 210, 191);
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.default-padding {
+  padding: 0px 10px 10px 10px;
+}
+
+.home-page {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(-29.36deg,
+      rgba(246, 97, 0, 0.5) 0%,
+      rgba(246, 97, 0, 0.75) 49%,
+      rgba(246, 97, 0, 1) 49%,
+      rgb(142, 57, 0) 49%,
+      rgb(91, 36, 0) 49%,
+      rgb(91, 36, 0) 50%,
+      rgb(50, 20, 0) 50%,
+      rgb(50, 20, 0) 51%,
+      rgb(50, 20, 0) 51%,
+      black 51%,
+      black 51%,
+      black 100%);
+  background-size: cover cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+
+}
+
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .descriptionheader {
+    font-size: 18px;
+  }
+
+  .wrapper {
+    margin-top: 0px;
+  }
+
+  .linklist {
+    font-size: 25px;
+
+  }
+
+
+  .descriptioncontainer {
+    height: 350px;
+  }
+
+  .linklistcontainer {
+    font-size: 35px;
+  }
+}
+
+/* If the screen size is 600px wide or less... */
+@media screen and (max-width: 600px) {
+  .descriptionheader {
+    font-size: 12px;
+    padding: 5px!important;
+  }
+
+  .wrapper {
+    margin-top: 25px;
+  }
+
+  .linklist {
+    font-size: 20px;
+  }
+
+  .hero-footer * {
+    font-size: 30px;
+  }
+
+  .descriptioncontainer {
+    height: 325px;
+
+  }
+
+  .linklistcontainer {
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-height: 700px) {
+  .hero-footer {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .linklistcontainer {
+    visibility: collapse;
+  }
+
+}
+
+.wrapper {
+  height: calc(100vh - 75px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.transitionwrapper {
+  position: absolute;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: linear-gradient(0deg,
+      rgb(79, 32, 0) 0%,
+      rgb(246, 98, 0) 49%,
+      rgba(246, 97, 0, 1) 49%,
+      rgb(142, 57, 0) 49%,
+      rgb(91, 36, 0) 49%,
+      rgb(91, 36, 0) 50%,
+      rgb(50, 20, 0) 50%,
+      rgb(50, 20, 0) 51%,
+      rgb(50, 20, 0) 51%,
+      rgba(0, 0, 0, 0) 51%,
+      rgba(0, 0, 0, 0) 51%,
+      rgba(0, 0, 0, 0) 100%);
+  background-size: cover cover;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.logo-container {
+  height: 50px;
+}
+
+.logo-image {
+  height: 50px;
+}
+
+.descriptioncontainer {
+  margin-top: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: 95%;
+  max-width: 1000px;
+  padding: 50px
+}
+
+.descriptionheader {
+  padding: 20px;
+
+}
+
+.linklistheader {
+  color: rgb(255, 210, 191);
+  padding: 5px;
+  border-bottom: 2px solid;
+}
+
+.linklistcontainer {
+  display: flex;
+  margin-left: auto;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 25vh;
+}
+
+.linklist {
+  list-style-type: none;
+  padding-right: 40px;
+  margin-top: 15px;
+  text-align: right;
+
+}
+
+
+
+.linklist li {
+  color: rgb(255, 210, 191);
+  padding: 10px;
+  border: solid rgb(255, 210, 191);
+  border-width: 0px 3px 0px 0px;
+  transition: border 0.1s linear;
+  position: relative;
+  font-weight: bolder;
+  -webkit-transform-style: preserve-3d;
+
+}
+
+
+.linklist li:hover {
+  cursor: pointer;
+}
+
+.hero-footer {
+  mix-blend-mode: normal;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95vw;
+}
+
+.devicons {
+  width: 200vw;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+
+.devicons i {
+
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+#about-me-container {
+  background-image: linear-gradient(209.36deg,
+  rgba(246, 97, 0, 0.5) 0%,
+  rgba(246, 97, 0, 0.75) 49%,
+  rgba(246, 97, 0, 1) 49%,
+  rgb(142, 57, 0) 49%,
+  rgb(91, 36, 0) 49%,
+  rgb(91, 36, 0) 50%,
+  rgb(50, 20, 0) 50%,
+  rgb(50, 20, 0) 51%,
+  rgb(50, 20, 0) 51%,
+  black 51%,
+  black 51%,
+  black 100%);
+  background-size: cover cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: right;
+}
+
+#about-me-section {
+  padding: 20px;
+}
+
+.marquee-container {
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: flex-end;
+  font-size: 50px;
+  filter: opacity(0.5);
+
+}
+
+.marquee-container i {
+  margin-left: 20px;
+}
