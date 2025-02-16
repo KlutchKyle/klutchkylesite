@@ -1,15 +1,22 @@
 body {
   /*background: url(../assets/img/bkgimg/klutchbkg.png) no-repeat center center fixed;*/
   background-color: black;
-
+  overflow-x: hidden;
+  color: rgb(255, 210, 191);
 }
+
 .example::-webkit-scrollbar {
   display: none;
 }
+
+.default-padding {
+  padding: 0px 10px 10px 10px;
+}
+
 .home-page {
   background-repeat: no-repeat;
   background-image: linear-gradient(-29.36deg,
-      rgba(246, 97, 0, 0.1) 0%,
+      rgba(246, 97, 0, 0.5) 0%,
       rgba(246, 97, 0, 0.75) 49%,
       rgba(246, 97, 0, 1) 49%,
       rgb(142, 57, 0) 49%,
@@ -22,10 +29,8 @@ body {
       black 51%,
       black 100%);
   background-size: cover cover;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   z-index: -1;
 
@@ -40,20 +45,21 @@ body {
   .descriptionheader {
     font-size: 18px;
   }
+
   .wrapper {
     margin-top: 0px;
   }
+
   .linklist {
     font-size: 25px;
 
   }
-  .deviconscontainer i {
-    font-size: 50px;
-    filter: opacity(0.5)
-  }
+
+
   .descriptioncontainer {
     height: 350px;
   }
+
   .linklistcontainer {
     font-size: 35px;
   }
@@ -63,20 +69,26 @@ body {
 @media screen and (max-width: 600px) {
   .descriptionheader {
     font-size: 12px;
+    padding: 5px!important;
   }
+
   .wrapper {
     margin-top: 25px;
   }
+
   .linklist {
-    font-size:  20px;
+    font-size: 20px;
   }
-  .deviconscontainer * {
+
+  .hero-footer * {
     font-size: 30px;
-    filter: opacity(0.5)
   }
+
   .descriptioncontainer {
     height: 325px;
+
   }
+
   .linklistcontainer {
     font-size: 25px;
   }
@@ -84,7 +96,7 @@ body {
 
 
 @media screen and (max-height: 700px) {
-  .deviconscontainer {
+  .hero-footer {
     visibility: hidden;
   }
 }
@@ -97,11 +109,11 @@ body {
 }
 
 .wrapper {
-  height: 75vh;
+  height: calc(100vh - 75px);
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 
 }
 
@@ -129,9 +141,10 @@ body {
   z-index: 200;
 }
 
-.logo-container{
+.logo-container {
   height: 50px;
 }
+
 .logo-image {
   height: 50px;
 }
@@ -145,6 +158,7 @@ body {
   text-align: left;
   width: 95%;
   max-width: 1000px;
+  padding: 50px
 }
 
 .descriptionheader {
@@ -152,10 +166,10 @@ body {
 
 }
 
-.linklistheader{
+.linklistheader {
   color: rgb(255, 210, 191);
   padding: 5px;
-  border-bottom: 2px solid ;
+  border-bottom: 2px solid;
 }
 
 .linklistcontainer {
@@ -166,6 +180,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  margin-bottom: 25vh;
 }
 
 .linklist {
@@ -173,7 +188,6 @@ body {
   padding-right: 40px;
   margin-top: 15px;
   text-align: right;
-  
 }
 
 
@@ -187,15 +201,15 @@ body {
   position: relative;
   font-weight: bolder;
   -webkit-transform-style: preserve-3d;
-  
+
 }
 
 
-.linklist li:hover{
+.linklist li:hover {
   cursor: pointer;
 }
 
-.deviconscontainer {
+.hero-footer {
   mix-blend-mode: normal;
   display: flex;
   justify-content: space-evenly;
@@ -204,7 +218,56 @@ body {
   width: 95vw;
 }
 
+.devicons {
+  width: 200vw;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+
+.devicons i {
+
+}
+
 footer {
   position: absolute;
   bottom: 10px;
+}
+
+#about-me-container {
+  background-image: linear-gradient(209.36deg,
+  rgba(246, 97, 0, 0.5) 0%,
+  rgba(246, 97, 0, 0.75) 49%,
+  rgba(246, 97, 0, 1) 49%,
+  rgb(142, 57, 0) 49%,
+  rgb(91, 36, 0) 49%,
+  rgb(91, 36, 0) 50%,
+  rgb(50, 20, 0) 50%,
+  rgb(50, 20, 0) 51%,
+  rgb(50, 20, 0) 51%,
+  black 51%,
+  black 51%,
+  black 100%);
+  background-size: cover cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: right;
+}
+
+#about-me-section {
+  padding: 20px;
+}
+
+.marquee-container {
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: flex-end;
+  font-size: 50px;
+  filter: opacity(0.5);
+
+}
+
+.marquee-container i {
+  margin-left: 20px;
 }

@@ -8,7 +8,7 @@
     gap: 25px;
     vertical-align: middle;
     overflow: hidden;
-
+    padding: 0px 18px 0px 18px;
   }
 
 /* If the screen size is 600px wide or less... */
@@ -54,6 +54,7 @@
     gap: 25px;
     vertical-align: middle;
     overflow: hidden;
+    z-index: 2;
   }
 
   .contact {

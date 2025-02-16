@@ -1,0 +1,34 @@
+.poieopod-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: #0a0a0a;
+  background-size: cover cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.poieopod-color {
+  color: #98DAFC
+}
+
+.poieopod-btn {
+  border: #98DAFC solid 2px;
+  color: #98DAFC;
+}
+
+.poieopod-mockup {
+  max-width: 1000px;
+  margin-top: 20px;
+  margin-right: 25px;
+  object-fit: cover;
+  width: 100vw;
+  z-index: -1;
+}

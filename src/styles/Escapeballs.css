@@ -1,9 +1,11 @@
 .example::-webkit-scrollbar {
   display: none;
 }
+
 .escapeballs-container {
   font-family: "8Bit";
   display: flex;
+  height: calc(100vh - 100px);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -20,30 +22,32 @@
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
-.screenshot-wrapper {
-  flex-direction: row;
-  width: 75%;
-  padding: 0;
-}
-.screenshot-container {
-  max-width: 400px;
-}
+  .screenshot-wrapper {
+    flex-direction: row;
+    width: 75%;
+    padding: 0;
+  }
 
-.ss-description {
-  padding: 30px;
-  font-size: 16px;
-  margin-top: -100px;
-  line-height: 25px;
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-  background-color: none;
-  text-align: left;
-}
-.app-store-container {
-  position: absolute;
+  .screenshot-container {
+    max-width: 400px;
+  }
 
-}
+  .ss-description {
+    padding: 30px;
+    font-size: 16px;
+    margin-top: -100px;
+    line-height: 25px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    text-align: left;
+  }
+
+  .app-store-container {
+    margin-top: 20px;
+
+  }
 }
 
 /* If the screen size is 600px wide or less... */
@@ -108,16 +112,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  bottom: 0;
   color: rgb(223, 223, 223);
 
 }
 
 .app-store-icon {
   margin-top: 10px;
-  filter: opacity(0.5);
   z-index: -1;
 }
-
-
-

@@ -77,12 +77,14 @@ export default function Escapeballs() {
         </div>
       </div>
       <div className="app-store-container">
-        Coming Soon!
+        <a target='_blank' href='https://apps.apple.com/eg/app/escap%C3%A9-balls/id6446209421'>
+
         <img
           className="app-store-icon"
           src={appstoreicon}
           alt="SVG as an image"
-        ></img>
+          ></img>
+          </a>
       </div>
     </motion.div>
   );

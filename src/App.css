@@ -2,3 +2,88 @@
   text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  /* CSS properties here */
+  font-family: 'Arial', sans-serif; 
+  margin-top: 10px;                
+  margin-bottom: 10px;             
+}
+
+h1 {
+  font-size: 2.5em; /* Larger text for the main title */
+}
+
+h2 {
+  font-size: 2.0em; /* Slightly smaller than h1 */
+}
+
+h3 {
+  font-size: 1.75em; /* Mid-sized heading */
+}
+
+h4 {
+  font-size: 1.5em; /* Smaller than h3 */
+}
+
+h5 {
+  font-size: 1.25em; /* Small heading */
+}
+
+h6 {
+  font-size: 1.0em; /* Smallest heading */
+}
+
+p {
+  font-size: 16px; /* Standard size for readability */
+  font-family: 'Arial', sans-serif; /* Matches your heading font family */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 601px) {
+  .header {
+    font-size: 45px;
+
+  }
+  }
+
+  /* If the screen size is 600px wide or less... */
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 1.9em;
+
+  }
+}
+
+.header {
+  margin-top: 50px;
+  color: white;
+  margin-bottom: 0px;
+  
+}
+
+
+.header a:visited {
+  color: white;
+}
+
+.primary-btn {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  vertical-align:bottom;
+  border:white solid 2px;
+  padding: 10px;
+  width: 5em;
+  transition: all 0.1s linear;
+}
+
+.primary-btn:hover {
+  border-color: white;
+  color: white;
+  cursor: pointer;
+}
+
+.tech-stack-container {
+
+}

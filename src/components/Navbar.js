@@ -28,9 +28,10 @@ export default function Navbar() {
       case "/yt-downloader":
         setDynamicColor("rgb(255,195,208)");
         break;
+      case "/poieo-pod":
+        setDynamicColor("#98DAFC")
       default:
-        setDynamicColor("rgb(255, 210, 191)");
-      // code block
+      break
     }
   }, [location]);
   useEffect(() => {
@@ -171,6 +172,21 @@ export default function Navbar() {
               }}
             >
               YT Downloader
+            </motion.li>
+            <motion.li
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.1 },
+              }}
+              variants={menuItemVariants}
+              onMouseDown={() => {
+                navigate({
+                  replace: false,
+                  pathname: "/poieo-pod",
+                });
+              }}
+            >
+              PoieoPod
             </motion.li>
             <motion.li
               whileHover={{
