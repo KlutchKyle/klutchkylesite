@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1acd027b.css",
+    "main.css": "/static/css/main.22f7b5bb.css",
     "main.js": "/static/js/main.f4f1ef5c.js",
     "static/js/787.29b94bf4.chunk.js": "/static/js/787.29b94bf4.chunk.js",
     "static/media/poieopod3.png": "/static/media/poieopod3.28fb05544f939e1c3d12.png",
@@ -12,12 +12,12 @@
     "static/media/8-BIT WONDER.TTF": "/static/media/8-BIT WONDER.5fa66681c6f0a8153b97.TTF",
     "static/media/appstoreicon.svg": "/static/media/appstoreicon.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "/index.html",
-    "main.1acd027b.css.map": "/static/css/main.1acd027b.css.map",
+    "main.22f7b5bb.css.map": "/static/css/main.22f7b5bb.css.map",
     "main.f4f1ef5c.js.map": "/static/js/main.f4f1ef5c.js.map",
     "787.29b94bf4.chunk.js.map": "/static/js/787.29b94bf4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1acd027b.css",
+    "static/css/main.22f7b5bb.css",
     "static/js/main.f4f1ef5c.js"
   ]
 }
